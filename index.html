@@ -9,6 +9,9 @@
     <!-- fontawesom----------------------- -->
     <script src="https://kit.fontawesome.com/4b7d87b680.js" crossorigin="anonymous"></script>
 
+    <!-- ---------- Google Fonts -------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
 
     <title>My Potfolio</title>
 </head>
@@ -20,8 +23,8 @@
                 <img src="images/Logo .png" alt="mylo" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#header">Accueil</a></li>
-                        <li><a href="#services">Services</a></li>
                         <li><a href="#about">à propos</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#portofolio">portofolio</a></li>
                         <li><a href="#contact">contact</a></li>
                         <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
@@ -32,8 +35,9 @@
             </nav>
 
             <div class="header-text">
-                <p>Développeur web/mobile</p>
-                <h1>Salut, Je suis <span>Mohamed</span> <br> développeur full stack</h1>
+                <p>Bienvenue à vous</p>
+                <h1>Je suis, <span class="text_title">Mohamed</span> </h1>
+                <h3> développeur full stack</h3>
             </div>
 
 
@@ -44,17 +48,14 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1"><img src="/images/dc.jpg" alt=""about me image>
+                <div class="about-col-1">
+                    <!-- <img src="/images/about.png" alt="about me image"> -->
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">à propos de moi</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, 
-                        consequuntur id incidunt facere odio 
-                        voluptatum sapiente cumque hic. Reprehenderit 
-                        beatae ipsum assumenda commodi autem atque ratione sunt eos. 
-                        Nemo itaque tenetur sit adipisci beatae culpa maiores totam voluptatem praesentium blanditiis 
-                        ipsum, sed dignissimos in est quae qui velit 
-                        sapiente illo!</p>
+                    <h1 class="sub-title text_title">à propos de moi</h1>
+                    <p>Je suis un développeur full stack freelance avec plus de 2 ans d'expérience, 
+                        spécialisé dans la création de sites front-end et full stack, ainsi que dans le développement d'applications Android. Mes compétences couvrent une large gamme de technologies, incluant HTML, CSS, JavaScript, React.js, Node.js, et Flutter. Passionné par le design intuitif et les performances optimales, je m'efforce de livrer des solutions élégantes et efficaces. 
+                        Mon expertise me permet de transformer des idées en produits numériques robustes et attrayants. Toujours à la recherche de nouveaux défis, je suis prêt à collaborer pour réaliser vos projets les plus ambitieux.</p>
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('competence')">Compétences</p>
@@ -71,16 +72,19 @@
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Designer</span><br>Conception des affiches/logo...</li>
-                                <li><span>Développeur web</span><br>Conception des sites web</li>
-                                <li><span>développeur Mobile</span><br>Création des application Android/IOS</li>
+                                <li><span>Formateur en Informatique</span><br>Chez Expert-Lab Technologie</li>
+                                <li><span>Dernier projet Front end: </span><br> Clinique Marhaba faite avec ReactJs </li>
+                                <!-- <li><span>Dernier projet Front end: </span><br> Clinique Marhaba faite avec React </li> -->
+                                <!-- <li><span>développeur Mobile</span><br>Création des application Android/IOS</li> -->
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>Designer</span><br>Conception des affiches/logo...</li>
-                                <li><span>Développeur web</span><br>Conception des sites web</li>
-                                <li><span>développeur Mobile</span><br>Création des application Android/IOS</li>
+                                <li><span>Développeur Android/IOS</span><br>CG-Tech Mali avec mention Très bien</li>
+                                <li><span>Développeur web</span><br>Expert-Lab Technologie</li>
+                                <li><span>développeur Android/IOS sur Udemy</span><br>Création des Application Android/IOS avec Flutter</li>
+                                <li><span>développeur Web</span><br>Création des Site web full stack</li>
+                                <li><span>développeur Back end</span><br>Création des APIs avec NodeJs</li>
                             </ul>
                           
                         </div>
@@ -93,26 +97,35 @@
 <!-- ------------------ Servicess ---------------- -->
     <div id="services">
         <div class="container">
-                <h1 class="sub-title">Mes services </h1>
+                <h1 class="sub-title text_title">Mes services </h1>
                 <div class="services-list">
 
                     <div>
-                        <i class="fa-solid fa-crop-simple"></i>
-                        <h2>Web Designer </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quae voluptatem sed facere iure. Distinctio quidem ut quaerat laboriosam fuga.</p>
-                        <a href="#">voir plus</a>
+                        
+                        <h2><i class="fa-solid fa-crop-simple"></i> Web Designer </h2>
+                        <p>En tant que web designer, je crée des interfaces utilisateur attrayantes et
+                             intuitives. Mon objectif est de marier esthétique et fonctionnalité pour offrir 
+                             une expérience utilisateur optimale, 
+                            tout en respectant les dernières tendances de design.</p>
+                            <a href="#contact" class="btn">Demander un service</a>
                     </div>
+
                     <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Développeur Web</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quae voluptatem sed facere iure. Distinctio quidem ut quaerat laboriosam fuga.</p>
-                        <a href="#">voir plus</a>
+                        
+                        <h2><i class="fa-solid fa-code"></i> Développeur Web</h2>
+                        <p>Avec une expertise en HTML, CSS, JavaScript, React.js et Node.js, je développe des sites web dynamiques et réactifs. Je m'engage à fournir des solutions personnalisées, 
+                            robustes et performantes, répondant à vos besoins spécifiques.</p>
+                            <a href="#contact" class="btn">Demander un service</a>
                     </div>
+
                     <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>Développeur Mobile</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quae voluptatem sed facere iure. Distinctio quidem ut quaerat laboriosam fuga.</p>
-                        <a href="#">voir plus</a>
+                        
+                        <h2><i class="fa-brands fa-app-store"></i> Développeur Mobile</h2>
+                        <p>Avec Flutter, je conçois des applications Android modernes et 
+                            efficaces. Je transforme vos idées en applications mobiles performantes, 
+                            offrant une expérience utilisateur fluide et engageante, 
+                            tout en garantissant une qualité irréprochable.</p>
+                        <a href="#contact" class="btn">Demander un service</a>
                     </div>
                 </div>
             </div>
@@ -124,34 +137,35 @@
 
     <div id="portofolio">
         <div class="container">
-            <h1 class="sub-title">Mon porfolio</h1>
-
+            <h1 class="sub-title text_title">Mon porfolio</h1>
+            <h3 class="last_projet">Mes dernier projets</h3>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/docteur3.jpg" alt="workimage">
+                    <!-- <img src="images/docteur3.jpg" alt="workimage"> -->
+                    <img src="images/clinique.jpg" alt="workimage">
                     <div class="layer">
                         <h3>Social media</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quis?</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#contact"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             
                 <div class="work">
-                    <img src="images/docteur3.jpg" alt="work image">
+                    <img src="images/food.jpg" alt="work image">
                     <div class="layer">
                         <h3>Social media</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quis?</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#contact"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
            
            
                 <div class="work">
-                    <img src="images/docteur3.jpg" alt="workimage">
+                    <img src="images/voyage.jpg" alt="workimage">
                     <div class="layer">
                         <h3>Social media</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quis?</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="#contact"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -168,12 +182,12 @@
         <div class="container">
             <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contacts</h1>
+                <h1 class="sub-title text_title">Contacts</h1>
                 <p> <i class="fa-solid fa-envelope"></i>amedicisse1@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>72 11 56 99</p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004983495888" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-cisse-253ab9235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <a href="cv/LETTE DE MOTIVATION CISSE MOHAMED.pdf" download  class="btn btn2">Télécharger mon Cv</a>
            

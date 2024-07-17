@@ -3,10 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Roboto Slab", serif;
     box-sizing: border-box;
 }
 
+
+.text_title{
+    font-family:"Playwrite CZ", cursive;
+}
 
 html{
     scroll-behavior: smooth;
@@ -21,7 +25,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#181818, #00000021);
+    /* background: linear-gradient(#181818, #00000021); */
 }
 
 
@@ -52,6 +56,8 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    text-transform: capitalize;
+    font-family: "Playwrite CZ", cursive;
     position: relative;
 }
 
@@ -77,19 +83,26 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 20px;
 }
 
 .header-text span{
-    color: #ff004f;;
+    font-size: 70px;
+    color: #ff004f;
 }
 
+.header-text h3{
+    font-size: 30px;
+    max-width: 26%;
+    background: #ff004f;
+}
 
 
 #about{
     padding: 80px 0;
     color: #ababab;
+    margin-bottom: 20px;
 }
 
 .row{
@@ -118,6 +131,7 @@ nav ul li a:hover::after{
 }
 
 
+
 .tab-titles{
     display: flex;
     margin: 20px 40px;
@@ -127,7 +141,7 @@ nav ul li a:hover::after{
 .tab-links{
     margin-right: 50px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
 }
@@ -150,11 +164,14 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 14px;
 }
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
 }
 
 .tab-contents{
@@ -194,24 +211,41 @@ nav ul li a:hover::after{
 }
 
 .services-list div i{
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 30px;
+    color: #ff004f;
 }
 
 .services-list div h2{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 500;
     margin-bottom: 15px;
+}
+
+
+.services-list div p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 
 .services-list div a {
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: -60px;
     display: inline-block;
+    transition: background 0.6s;
 }
 
+/* .services-list div a */
+
+.services-list div .btn:hover{
+    background: #fff;
+    border-color: white;
+    color: #ff004f;
+}
 
 
 
@@ -226,6 +260,14 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
+.last_projet{
+    margin-top: 30px;
+    font-size: 25px;
+    text-transform: capitalize;
+    background-color: #ff004f;
+    width: 20%;
+}
+
 .work{
     border-radius: 10px;
     position: relative;
@@ -234,6 +276,8 @@ nav ul li a:hover::after{
 
 .work img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
